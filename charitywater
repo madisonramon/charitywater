@@ -1,7 +1,242 @@
-echo "# charitywater" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/madisonramon/charitywater.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charity Water Mockup</title>
+
+<style>
+:root {
+    --cream: #fff7e1;
+    --blue: #77a8bb;
+    --yellow: #fec907;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Proxima Nova", Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--black);
+}
+
+.donate-btn {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    height: 85vh;
+    background-image: url("https://via.placeholder.com/1600x900");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.hero-overlay {
+    background-color: rgba(119, 168, 187, 0.85);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    color: var(--white);
+}
+
+.hero-overlay h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-overlay button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-overlay button:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+/* ================= STORY SECTION ================= */
+
+.story {
+    padding: 100px 80px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.story img {
+    width: 500px;
+    border-radius: 12px;
+}
+
+.story-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ================= CTA ================= */
+
+.cta {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.cta button {
+    background-color: var(--yellow);
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 40px;
+        height: auto;
+    }
+
+    .hero-overlay h1 {
+        font-size: 36px;
+    }
+
+    .story {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    .story img {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">charity: water</div>
+    <div class="nav-links">
+        <a href="#">About Us</a>
+        <a href="#">Our Impact</a>
+        <a href="#">How to Help</a>
+        <a href="#" class="donate-btn">Donate</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Real Change Starts With Your Action.</h1>
+        <p>
+            Join charity: water in ending the global water crisis by funding clean
+            water projects with proven, long-lasting impact.
+        </p>
+        <button>Donate</button>
+    </div>
+</section>
+
+<!-- STORY SECTION -->
+<section class="story">
+    <img src="https://via.placeholder.com/500x400" alt="Story Image">
+    <div class="story-text">
+        <h2>Our Story</h2>
+        <p>
+            We believe everyone deserves access to clean and safe water.
+            Through transparency, community partnership, and sustainable
+            solutions, we are changing lives across the globe.
+        </p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Be Part of the Change</h2>
+    <button>Get Involved</button>
+</section>
+
+</body>
+</html>
